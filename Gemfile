@@ -62,3 +62,6 @@ gem 'devise'
 
 # Using figaro to store devise and sendgrid credentials
 gem 'figaro'
+
+# Pundit for user roles
+gem 'pundit'

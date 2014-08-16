@@ -33,8 +33,8 @@ posts = Post.all
 end
 
 User.first.update_attributes(
-  email: 'dbarreola@gmail.com',
-  password: 'Hello World',
+  email: 'dbarreola@me.com',
+  password: 'helloworld',
 )
 
 puts "Seed finished"
