@@ -56,3 +56,6 @@ end
 
 # Bootstrap for styling
 gem 'bootstrap-sass', '~> 3.1.1'
+
+# Use Devise for authentication
+gem 'devise'
