@@ -59,3 +59,6 @@ gem 'bootstrap-sass', '~> 3.1.1'
 
 # Use Devise for authentication
 gem 'devise'
+
+# Using figaro to store devise and sendgrid credentials
+gem 'figaro'
