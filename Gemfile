@@ -68,3 +68,10 @@ gem 'pundit'
 
 # Redcarpet for Markdown on posts
 gem 'redcarpet'
+
+# Gems for uploading images
+gem 'carrierwave'
+gem 'mini_magick'
+
+# Amazon S3 enhancer (cloud service library)
+gem 'fog'
