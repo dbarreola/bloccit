@@ -82,3 +82,8 @@ gem 'will_paginate', '~> 3.0.5'
 # debugging
 gem 'binding_of_caller'
 gem 'better_errors'
+
+# RSpec
+group :test do
+	gem 'rspec-rails'
+end
