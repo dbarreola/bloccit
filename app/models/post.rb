@@ -13,6 +13,10 @@ class Post < ActiveRecord::Base
   validates :user, presence: true
 
 
+  def create_vote
+    user.votes.create(value: 1, post: self)
+  end
+
   def up_votes
   	self.votes.where(value: 1).count
   end
