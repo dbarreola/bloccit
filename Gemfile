@@ -86,4 +86,5 @@ gem 'better_errors'
 # RSpec
 group :test do
 	gem 'rspec-rails'
+	gem 'capybara'
 end
