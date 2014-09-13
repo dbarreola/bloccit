@@ -11,12 +11,16 @@
     <p><%= image_tag(@post.image_url) if @post.image? %></p>
     <hr/>
     <h2 class='js-comments-count'><%= @comments.count %> Comments</h2>
-    <%= render partial: 'comments/comment', collection: @comments %>
-     <% if policy(@comment).create? %>
-      <hr/>
-      <h4>New Comment</h4>
-      <%= render partial: 'comments/form', locals: {topic: @topic, post: @post, comment: @comment} %>
-    <% end %>
+    <div class='js-comments'>
+      <%= render partial: 'comments/comment', collection: @comments %>
+    </div>
+    <div class='new-comment'>
+      <% if policy(@comment).create? %>
+        <hr/>
+        <h4>New Comment</h4>
+        <%= render partial: 'comments/form', locals: {topic: @topic, post: @post, comment: @comment} %>
+      <% end %>
+    </div>
   </div>
   <div class="col-md-4">
     <% if policy(@post).edit? %>

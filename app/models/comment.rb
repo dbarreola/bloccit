@@ -1,7 +1,9 @@
 class Comment < ActiveRecord::Base
   belongs_to :user
   belongs_to :post
- # attr_accessible :body, :post
+  # attr_accessible :body, :post
+
+  default_scope {order('updated_at DESC')}
 
   validates :body, length: {minimum: 5}, presence: true
   validates :user, presence: true
